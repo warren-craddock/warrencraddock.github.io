@@ -1,0 +1,52 @@
+<!doctype html>
+<html dir="ltr" lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weir &amp; Craddock Photography</title>
+    <meta name="Description" content="Wide-angle portraiture, big-sky landscapes, and astrophotography from Warren Craddock.">
+    <meta name="google-site-verification" content="vJkqcC9_DDPzjrJfMZ05tR32p7vp-UVxVq_auOgcIeY" />
+    <link type="text/css" rel="stylesheet" href="/static/css/mondrian.css">
+    <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="nav_bar_anchor">
+      <div class="nav_bar_left">
+          <img id="masthead" class="nav_element nav_button filter_selector" filter="" src="/static/images/warren_craddock.png">
+          <img class="nav_element" src="/static/images/galleries.png">
+          <img class="nav_element nav_button filter_selector" filter="" src="/static/images/all.png">
+          <img class="nav_element nav_button filter_selector" filter="portrait" src="/static/images/portraits.png">
+          <img class="nav_element nav_button filter_selector" filter="fashion" src="/static/images/fashion.png">
+          <img class="nav_element nav_button filter_selector" filter="editorial" src="/static/images/editorial.png">
+      </div>
+      <div class="nav_bar_right">
+          <img class="nav_element" id="client_key_button" src="/static/images/clients.png">
+          <img class="nav_element" id="contact_button" src="/static/images/contact.png">
+      </div>
+    </div>
+
+    <div class="overlay click_ends_lightbox" id="curtain">
+    </div>
+
+    <div class="overlay click_ends_lightbox" id="loading_spinner">
+    </div>
+
+    <div class="overlay lightbox click_ends_lightbox" id="lightbox">
+        <div class="lightbox_container click_ends_lightbox" id="lightbox_container">
+        </div>
+    </div>
+
+    <main>
+        <div id="mondrian_gallery" style="position: relative;"></div>
+    </main>
+
+    <div id="footer">
+        &copy; 2023 WARREN CRADDOCK
+    </div>
+</body>
+<script type="module" src="/static/js/render_mondrian_tree.js"></script>
+<script type="module" src="/static/js/lightbox.js"></script>
+
+</html>

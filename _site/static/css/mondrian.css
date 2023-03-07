@@ -1,0 +1,213 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#nav_bar_anchor {
+    /*display: none; FIXME*/ 
+    background-color: white;
+    position: fixed;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2.5em;
+    line-height: 2.5em;
+    z-index: 4000;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.25);
+}
+
+.nav_element {
+/*    display: inline;*/
+    display: none;
+    height: 1em;
+    line-height: 1em;
+    margin: 0.75em 0.4em;
+}
+
+#masthead {
+    display: inline;
+}
+
+.nav_bar_left {
+    display: inline-block;
+}
+
+.nav_bar_right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin-right: 1.0em;
+}
+
+/* The masthead is laid out just like any other navigation element,
+but it is drawn a bit larger and has wider margins. */
+#masthead {
+    height: 1.25em;
+    margin: 0.625em 1.5em;
+}
+
+/* Mondrian gallery filles up the entire screen */
+
+#mondrian_gallery {
+    position: relative;
+/*    width: 90%;*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+    margin-top: 3.5em;
+    margin-bottom: 0em;
+}
+
+html {
+    font-family: 'Futura W01', helvetica, san-serif;
+    line-height: 1.3;
+    font-size: 100%;
+    color: #3C3C3B;
+    font-weight: 300;
+    background: white;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.index main {
+    margin: 3rem;
+}
+
+.index ul {
+    margin: 2rem auto;
+    padding: 0;
+    list-style: none;
+}
+
+.index li {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.index img {
+    width: 100%;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid #aaa;
+}
+
+.index .original img {
+    margin-top: 10px;
+}
+
+.index a {
+    display: block;
+}
+
+.block-sizes li:nth-child(1) {
+    /* night train */
+    grid-row: span 4;
+    grid-column: span 4;
+}
+
+.block-sizes li:nth-child(2) {
+    /* trisha jumping */
+    grid-row: span 4;
+    grid-column: span 6;
+}
+
+.block-sizes li:nth-child(3) {
+    /* north america nebula */
+    grid-row: span 6;
+    grid-column: span 4;
+}
+
+.block-sizes li:nth-child(4) {
+    /* white island */
+    grid-row: span 6;
+    grid-column: span 10;
+}
+
+/* Brightens images when the mouse hovers over them
+See http://designshack.net/articles/css/joshuajohnson-2/ */
+
+.brighten {
+    border: 1px solid white;
+}
+
+.brighten:hover {
+    border: 1px solid black;
+}
+
+/* Div that overlays the rest of the page;
+see http://stackoverflow.com/questions/1718951/jquery-how-can-i-create-a-simple-overlay */
+
+.overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#lightbox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-image: url('/static/images/curtain_smooth.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#lightbox img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* A curtain is a dark, transparent overlay */
+
+/*#curtain {
+    background-image: url('/static/images/curtain_smooth.png');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+*/
+#loading_spinner {
+    background-image: url('/static/images/loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    display: block;
+    text-align: right;
+    font-size: 0.7em;
+    font-family: 'Gafata', sans-serif;
+    width: 90%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
