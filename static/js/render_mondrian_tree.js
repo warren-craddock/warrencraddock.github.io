@@ -52,7 +52,7 @@ function exitHandler() {
 function layout() {
 	// Find the largest available layout that still has a small (7%) margin.
 	const border = 3;
-	const margin = 40;
+	const margin = 20;
 	const desired_width = window.innerWidth - 2 * margin - 2 * border;
 	let selected_width = WIDTHS[WIDTHS.length - 1];
 	for (const width of WIDTHS) {
